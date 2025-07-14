@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Bresciani - Elegância Clássica e Moderna</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="img/LogoBresciane.png" alt="Logo Barbearia Bresciane" class="logo-img" style="height: 48px; width: auto;" />
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#inicio" class="nav-link">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#sobre" class="nav-link">Sobre Nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servicos" class="nav-link">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#avaliacoes" class="nav-link">Avaliações</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">Contatos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#localizacao" class="nav-link">Como Chegar</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <img src="img/B.png" alt="B decorativo" class="hero-bg-b" />
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Uma barbearia clássica com a modernidade que o homem precisa.</h1>
+                <p class="hero-subtitle">Tradição, elegância e cuidado masculino em cada detalhe</p>
+                <button class="cta-button" onclick="scrollToSection('contato')">Quero agendar meu horário</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nós -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sobre a Bresciani</h2>
+                <p class="section-subtitle">Excelência em cuidado masculino desde nossa fundação</p>
+            </div>
+            <div class="about-content">
+                <p class="about-text">Na Barbearia Bresciani, combinamos técnicas clássicas com tendências modernas para oferecer uma experiência única. Nosso espaço foi pensado para o homem que valoriza qualidade, estilo e tradição.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Cuidado profissional com a qualidade que você merece</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">✂️</div>
+                    <h3 class="service-title">Corte</h3>
+                    <div class="service-price">R$ 100</div>
+                    <p class="service-description">Técnicas clássicas e modernas para valorizar sua identidade.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✂️🧔</div>
+                    <h3 class="service-title">Corte + Barba</h3>
+                    <div class="service-price">R$ 150</div>
+                    <p class="service-description">Combo ideal para cuidado completo e visual elegante.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🧔</div>
+                    <h3 class="service-title">Barba</h3>
+                    <div class="service-price">R$ 80</div>
+                    <p class="service-description">Estilo clássico, resultado limpo e alinhado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pacotes -->
+    <section id="pacotes" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conheça nossos Pacotes</h2>
+                <p class="section-subtitle">Economize com nossos planos mensais</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3 class="package-title">Básico</h3>
+                    <div class="package-description">Corte 2x por mês</div>
+                    <div class="package-pricing">
+                        <span class="package-old-price">De: R$ 200</span>
+                        <span class="package-new-price">Por: R$ 180</span>
+                        <span class="package-savings">Economize: R$ 20</span>
+                    </div>
+                </div>
+                <div class="package-card featured">
+                    <h3 class="package-title">Clássico</h3>
+                    <div class="package-description">Corte + Barba 2x por mês</div>
+                    <div class="package-pricing">
+                        <span class="package-old-price">De: R$ 300</span>
+                        <span class="package-new-price">Por: R$ 260</span>
+                        <span class="package-savings">Economize: R$ 40</span>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <h3 class="package-title">Elegante</h3>
+                    <div class="package-description">Corte toda semana</div>
+                    <div class="package-pricing">
+                        <span class="package-old-price">De: R$ 400</span>
+                        <span class="package-new-price">Por: R$ 320</span>
+                        <span class="package-savings">Economize: R$ 80</span>
+                    </div>
+                </div>
+                <div class="package-card premium">
+                    <h3 class="package-title">Gentleman</h3>
+                    <div class="package-description">Corte + Barba toda semana</div>
+                    <div class="package-pricing">
+                        <span class="package-old-price">De: R$ 600</span>
+                        <span class="package-new-price">Por: R$ 460</span>
+                        <span class="package-savings">Economize: R$ 140</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avaliações -->
+    <section id="avaliacoes" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O que nossos clientes dizem</h2>
+                <p class="section-subtitle">Experiências que fazem a diferença</p>
+            </div>
+            <div class="reviews-carousel">
+                <div class="review-card active">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Excelente atendimento! O corte ficou perfeito e o ambiente é muito acolhedor. Recomendo a todos!"</p>
+                    <div class="review-author">- Carlos Silva</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Profissionais muito competentes. Sempre saio satisfeito com o resultado. A barbearia tem um estilo único!"</p>
+                    <div class="review-author">- Roberto Santos</div>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Melhor barbearia da região! Atendimento personalizado e resultado impecável. Virei cliente fiel!"</p>
+                    <div class="review-author">- Fernando Lima</div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="showReview(0)"></span>
+                <span class="dot" onclick="showReview(1)"></span>
+                <span class="dot" onclick="showReview(2)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Como Chegar -->
+    <section id="localizacao" class="location">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Como Chegar</h2>
+                <p class="section-subtitle">Encontre-nos facilmente</p>
+            </div>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Nossa Localização</h3>
+                    <p>Centro comercial Alphaville — Calçada das Bétulas, 43</p>
+                    <button class="route-button" onclick="openMaps()">Ver rota</button>
+                </div>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7542929157244!2d-46.845678!3d-23.5489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMyJzU2LjAiUyA0NsKwNTAnNDQuNCJX!5e0!3m2!1spt-BR!2sbr!4v1"
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contato</h2>
+                <p class="section-subtitle">Entre em contato conosco</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>contato@barbeariabresciani.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-text">
+                            <h4>Telefone</h4>
+                            <p>A CONFIRMAR</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-text">
+                            <h4>Endereço</h4>
+                            <p>Centro comercial Alphaville — Calçada das Bétulas, 43</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-text">
+                            <h4>Horário de Funcionamento</h4>
+                            <p>
+                                Segunda a Sexta: 09:00 - 20:00<br>
+                                Sábado: 09:00 - 15:00<br>
+                                Domingo: Fechado
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <h4>Siga-nos nas redes sociais</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">📘</a>
+                        <a href="#" class="social-icon">📸</a>
+                        <a href="#" class="social-icon">🐦</a>
+                        <a href="#" class="social-icon">💼</a>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Barbearia Bresciani. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
