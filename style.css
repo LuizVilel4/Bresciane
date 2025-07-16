@@ -403,6 +403,8 @@ section {
     text-align: center;
     display: none;
     border: 1px solid var(--border-color);
+    position: relative;
+    padding-left: 72px;
 }
 
 .review-card.active {
@@ -432,6 +434,18 @@ section {
 .review-author {
     font-weight: 600;
     color: var(--accent-color);
+}
+
+.review-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border: 2px solid #fff;
 }
 
 .carousel-dots {
