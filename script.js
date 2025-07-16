@@ -257,3 +257,22 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Botão Voltar ao Topo
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopBtn = document.getElementById('backToTop');
+    if (!backToTopBtn) {
+        console.log('Botão Voltar ao Topo não encontrado');
+        return;
+    }
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = 'block';
+        } else {
+            backToTopBtn.style.display = 'none';
+        }
+    });
+    backToTopBtn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
