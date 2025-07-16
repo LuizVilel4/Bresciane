@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Monta a mensagem para o WhatsApp
         const texto = `Olá, meu nome é ${name}. Mensagem: ${message}`;
-        const numero = '5511999999999'; // Substitua pelo número do WhatsApp desejado, com DDI e DDD
+        const numero = '5511930161889'; // Substitua pelo número do WhatsApp desejado, com DDI e DDD
         const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
         window.open(url, '_blank');
     });
