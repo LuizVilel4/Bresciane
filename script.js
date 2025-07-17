@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Validação simples
         if (!name || !message) {
-            alert('Por favor, preencha todos os campos.');
+            alert('Por favor, preencha todos os campos.');''
             return;
         }
 

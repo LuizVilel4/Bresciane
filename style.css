@@ -238,7 +238,7 @@ section {
 
 /* About Section */
 .about {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
 }
 
 .about-content {
@@ -259,7 +259,7 @@ section {
 
 /* Services */
 .services {
-    background-color: var(--bg-dark);
+    background: var(--bg-dark);
 }
 
 .services-grid {
@@ -310,7 +310,7 @@ section {
 
 /* Packages */
 .packages {
-    background-color: var(--primary-color);
+    background: var(--primary-color);
 }
 
 .packages-grid {
@@ -387,7 +387,7 @@ section {
 
 /* Reviews */
 .reviews {
-    background-color: var(--bg-dark);
+    background: var(--bg-dark);
 }
 
 .reviews-carousel {
@@ -470,7 +470,7 @@ section {
 
 /* Location */
 .location {
-    background-color: var(--primary-color);
+    background: var(--bg-dark);
 }
 
 .location-content {
@@ -517,7 +517,7 @@ section {
 
 /* Contact */
 .contact {
-    background-color: var(--bg-dark);
+    background: var(--primary-color);
 }
 
 .contact-content {
@@ -596,8 +596,7 @@ section {
 
 /* Footer */
 .footer {
-    background-color: var(--secondary-color);
-    padding: 3rem 0 2rem;
+    background: var(--secondary-color);
 }
 
 .footer-content {
