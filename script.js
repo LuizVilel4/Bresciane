@@ -40,11 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const dots = document.querySelectorAll('.dot');
 
     function showNextReview() {
-        reviews[currentReview].classList.remove('active');
-        dots[currentReview].classList.remove('active');
-        
+        // Garante que todos os reviews e dots estejam desativados antes de ativar o próximo
+        reviews.forEach(review => review.classList.remove('active'));
+        dots.forEach(dot => dot.classList.remove('active'));
+
         currentReview = (currentReview + 1) % reviews.length;
-        
+
         reviews[currentReview].classList.add('active');
         dots[currentReview].classList.add('active');
     }
@@ -105,6 +106,8 @@ function showReview(index) {
     
     reviews[index].classList.add('active');
     dots[index].classList.add('active');
+    // Atualiza o índice global para sincronizar com o automático
+    currentReview = index;
 }
 
 // Open Google Maps
